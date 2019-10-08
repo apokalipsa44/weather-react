@@ -1,9 +1,11 @@
 import React from 'react';
 
-const Form =props=>{
+const Form =(props)=>{
     return(
-        <form>
-            <input type="text" value={props.value} onChange={props.unlock}></input>
+        <form onSubmit={props.submit}>
+            <input type="text" value={props.value} onChange={props.unlock} placeholder="wpisz cośtam"></input>
+
+            
             <button>Submit</button>
         </form>
     )
